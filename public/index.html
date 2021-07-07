@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Vue Component Tutorial</title>
+  <link rel="stylesheet" href="./dist/app.css">
 </head>
 <body>
   <div id="app">
-    <h1>数当てゲーム</h1>
-    <number-guess
-      @start="onStart"
-      @collect="onCollect"
-      @lower="onLower"
-      @higher="onHigher"
-      @lose="onLose"
-    ></number-guess>
-    <p>{{ message }}</p>
-    <p>残り：{{ tryCountLeft }}回</p>
+    <div class="container">
+      <div class="columns">
+        <div class="column col-6 col-md-12 col-mx-auto">
+          <markdown-panel></markdown-panel>
+        </div>
+      </div>
+    </div>
   </div>
-  <script src="./dist/main.js"></script>
+  <script src="/bundle.js"></script>
 </body>
 </html>
