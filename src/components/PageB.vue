@@ -1,22 +1,18 @@
 <template>
+
 <div class="hello">
-
+<h1>PageB</h1>
 <h1>{{ msg }}</h1>
-
-  <input type="text" v-model="msg">
-  <router-link to='/PageA'>PageA</router-link>
-  <router-link :to="'/PageB/' + msg">PageB</router-link>
+    
+<router-link to="/">HelloWorld</router-link>
+    
 </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  name: 'PageB',
+  props: [ 'msg' ]
 }
 </script>
 
